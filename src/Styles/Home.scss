@@ -1,0 +1,14 @@
+.Home{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+}
+@media (min-width: 360px) and (max-width: 480px){
+  .home{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+  }
+
+}

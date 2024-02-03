@@ -1,0 +1,66 @@
+.block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 800px;
+
+
+  &_text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h1{
+      font-size: 48px;
+      font-weight: 500;
+      font-family: Roboto;
+      color: #282828;
+    }
+    p{
+      font-size: 20px;
+      font-weight: 400;
+      font-family: Roboto;
+      color: #535353;
+    }
+    &_btn{
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &_image{
+    img{
+      width: 550px;
+    }
+  }
+}
+
+
+
+
+@media (min-width: 360px) and (max-width: 480px){
+  .block{
+    display: grid;
+
+    &_text{
+      h1{
+        font-size: 28px;
+      }
+      p{
+        font-size: 14px;
+        width: 343px;
+      }
+      &_btn{
+        img{
+          width: 134px;
+        }
+      }
+    }
+    &_image{
+      img{
+        width: 343px;
+      }
+    }
+  }
+}
