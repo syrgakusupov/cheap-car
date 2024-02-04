@@ -1,14 +1,14 @@
 import React from 'react';
-import "../../Styles/offers.scss"
-import phone_2 from "../../image/phone2.svg"
-import arrow from "../../image/line.jpg"
-const Block2 = () => {
+import "../../Styles/Offers.scss"
+import phoneOffers from "../../image/phoneOffers.svg"
+import arrow from "../../image/arrow.jpg"
+const Offers = () => {
     return (
-        <div className="offers">
+        <section className="offers">
             <h1>Что мы предлагаем?</h1>
 
             <div className="offers_content">
-                <img src={phone_2} alt=""/>
+                <img src={phoneOffers} alt=""/>
 
                 <div className="offers_content_text">
                     <div className="offers_content_text_auto">
@@ -33,8 +33,8 @@ const Block2 = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default Block2;
+export default Offers;

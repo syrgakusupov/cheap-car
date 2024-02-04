@@ -4,7 +4,7 @@ import logo from "../../image/logo.svg"
 import { HiOutlineDownload } from "react-icons/hi"
 const Header = () => {
     return (
-        <div className="main">
+        <header className="main">
             <div className="header">
                 <div className="header_logo">
                     <img src={logo} alt=""/>
@@ -13,7 +13,7 @@ const Header = () => {
                 <button className="btn_text">Установить приложение</button>
                 <button className="btn_icon"><HiOutlineDownload/></button>
             </div>
-        </div>
+        </header>
     );
 };
 

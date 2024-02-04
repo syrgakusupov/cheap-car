@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa6"
 import { PiTelegramLogo } from "react-icons/pi"
 const Footer = () => {
     return (
-       <div className="footer_block">
+       <footer className="footer_block">
            <div className="footer">
                <div className="footer_content">
                    <div className="footer_content_logos">
@@ -36,7 +36,7 @@ const Footer = () => {
            </div>
 
 
-       </div>
+       </footer>
     );
 };
 

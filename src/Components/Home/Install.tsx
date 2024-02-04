@@ -1,13 +1,13 @@
 import React from 'react';
 import "../../Styles/Install.scss"
-import phone_4 from "../../image/phon4.svg"
-const Block4 = () => {
+import phoneInstall from "../../image/phoneInstall.svg"
+const Install = () => {
     return (
-        <div className="Install">
-            <div className="Install_content">
-                <img src={phone_4} alt=""/>
+        <section className="install">
+            <div className="install_content">
+                <img src={phoneInstall} alt=""/>
 
-                <div className="Install_content_text">
+                <div className="install_content_text">
                     <h1>Установите приложение</h1>
                     <p>
                         Наши широкие возможности поиска, безопасные сделки и
@@ -18,8 +18,8 @@ const Block4 = () => {
                     <button>Скачать Арзан Машина</button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default Block4;
+export default Install;

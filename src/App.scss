@@ -4,13 +4,8 @@
   margin: 0;
   padding: 0;
 }
-body{
-  background-color: gray;
-}
+
 .App{
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
   background-color: #FFFFFF;
 
 
@@ -26,10 +21,6 @@ body{
 
 @media (min-width: 360px) and (max-width: 480px){
   .App{
-    width: 100%;
-    max-width: 375px;
-    margin: 0 auto;
-
     .container{
       width: 100%;
       max-width: 343px;

@@ -1,11 +1,11 @@
 import React from 'react';
-import "../../Styles/deals.scss"
+import "../../Styles/Deals.scss"
 import phone from "../../image/phone.svg"
 import apple from "../../image/applstore.svg"
 import google from "../../image/googlplay.svg"
 const Deals = () => {
     return (
-            <div className="deals">
+            <section className="deals">
                 <div className="deals_text">
                     <h1>
                         Лучшие сделки на <br/>
@@ -28,14 +28,14 @@ const Deals = () => {
                 <div className="phone">
                     <img src={phone} alt=""/>
                 </div>
-                    <div className="deals_progress">
-                        <div className="deals_progress_inside">
-                            <span></span>
 
-                        </div>
+                <div className="deals_progress">
+                    <div className="deals_progress_inside">
+                        <span></span>
                     </div>
+                </div>
 
-            </div>
+            </section>
     );
 }
 

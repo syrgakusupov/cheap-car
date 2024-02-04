@@ -1,11 +1,11 @@
 import React from 'react';
-import "../../Styles/application.scss"
+import "../../Styles/Application.scss"
 import phoneIcon from "../../image/phoneIcon.png"
 import cardIcon from "../../image/cardIcon.png"
-import telIcon from "../../image/telIcon.png"
-const Block3 = () => {
+import telIcon from "../../image/connectionIcon.png"
+const Application = () => {
     return (
-        <div className="application">
+        <section className="application">
             <h1>Как работает приложение</h1>
 
             <div className="application_content">
@@ -35,8 +35,8 @@ const Block3 = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default Block3;
+export default Application;

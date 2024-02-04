@@ -1,8 +1,8 @@
 import React from 'react';
 import "../../Styles/Home.scss"
-import Deals from "../../Components/Home/deals";
-import Block_2 from "../../Components/Home/offers";
-import Block_3 from "../../Components/Home/application";
+import Deals from "../../Components/Home/Deals";
+import Block_2 from "../../Components/Home/Offers";
+import Block_3 from "../../Components/Home/Application";
 import Block_4 from "../../Components/Home/Install";
 
 const HomePage = () => {
