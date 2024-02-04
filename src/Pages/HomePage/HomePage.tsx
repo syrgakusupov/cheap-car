@@ -1,14 +1,14 @@
 import React from 'react';
 import "../../Styles/Home.scss"
-import Block_1 from "../../Components/Home/Block_1";
-import Block_2 from "../../Components/Home/Block_2";
-import Block_3 from "../../Components/Home/Block_3";
-import Block_4 from "../../Components/Home/Block_4";
+import Deals from "../../Components/Home/deals";
+import Block_2 from "../../Components/Home/offers";
+import Block_3 from "../../Components/Home/application";
+import Block_4 from "../../Components/Home/Install";
 
 const HomePage = () => {
     return (
         <div className="Home">
-            <Block_1/>
+            <Deals/>
             <Block_2/>
             <Block_3/>
             <Block_4/>

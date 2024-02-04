@@ -1,4 +1,4 @@
-.block_3{
+.application{
   margin-top: 50px;
 
   h1{
@@ -59,7 +59,7 @@
 }
 
 @media (min-width: 360px) and (max-width: 480px){
-  .block_3{
+  .application{
     h1{
       display: flex;
       justify-content: start;
