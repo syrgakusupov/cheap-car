@@ -1,9 +1,19 @@
+
 .block{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 800px;
-
+  .phone{
+    position: relative;
+    img{
+      width: 320px;
+      position: absolute;
+      left: 170px;
+      bottom: -330px;
+      z-index: 1;
+    }
+  }
 
   &_text{
     display: flex;
@@ -15,23 +25,86 @@
       font-weight: 500;
       font-family: Roboto;
       color: #282828;
+
     }
     p{
       font-size: 20px;
       font-weight: 400;
       font-family: Roboto;
       color: #535353;
+      width: 555px;
+
     }
     &_btn{
       display: flex;
       gap: 10px;
       cursor: pointer;
+
     }
   }
 
-  &_image{
+  &_progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../image/progress.png");
+    background-size: cover;
+    width: 620px;
+    height: 620px;
+    animation: progress 5s linear infinite;
+    position: relative;
+    &:before{
+      content: '';
+      padding: 5px;
+      border-radius: 100%;
+      background-color: black;
+      position: absolute;
+      right: 52px;
+      top: 135px;
+    }
+    @keyframes progress {
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(-360deg);
+      }
+    }
+    &_inside{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../image/progress.png");
+      background-size: cover;
+      width: 470px;
+      height: 470px;
+      position: relative;
+      animation: inside 2s linear infinite;
+      span{
+        padding: 5px;
+        background-color: black;
+        border-radius: 100%;
+        position: absolute;
+        right: 200px;
+        top: 0;
+      }
+
+
+
+      @keyframes inside {
+        from{
+          transform: rotate(0deg);
+        }
+        to{
+          transform: rotate(360deg);
+        }
+      }
+    }
+    
+
     img{
-      width: 550px;
+      width: 120px;
+
     }
   }
 }
@@ -42,7 +115,15 @@
 @media (min-width: 360px) and (max-width: 480px){
   .block{
     display: grid;
-
+    .phone{
+      position: relative;
+      img{
+        width: 177px;
+        position: absolute;
+        left: 85px;
+        top: 60px;
+      }
+    }
     &_text{
       h1{
         font-size: 28px;
@@ -57,9 +138,20 @@
         }
       }
     }
-    &_image{
-      img{
-        width: 343px;
+    &_progress{
+      width: 343px;
+      height: 343px;
+      &:before{
+        right: 26px;
+        top: 70px;
+      }
+      &_inside{
+        width: 260px;
+        height: 260px;
+        span{
+          right: 110px;
+          top: -3px;
+        }
       }
     }
   }

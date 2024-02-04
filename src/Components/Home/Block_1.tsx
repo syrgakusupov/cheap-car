@@ -17,6 +17,7 @@ const Block_1 = () => {
                         самым привлекательным ценам на рынке.
                         Откройте для себя новый уровень удобства и экономии
                         вместе с нами!
+
                     </p>
                     <div className='block_text_btn' >
                         <a href="#"><img src={apple} alt=""/></a>
@@ -24,9 +25,16 @@ const Block_1 = () => {
                     </div>
                 </div>
 
-                <div className="block_image">
+                <div className="phone">
                     <img src={phone} alt=""/>
                 </div>
+                    <div className="block_progress">
+                        <div className="block_progress_inside">
+                            <span></span>
+
+                        </div>
+                    </div>
+
             </div>
     );
 }
