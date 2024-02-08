@@ -4,7 +4,7 @@ import logo from "../../image/logo.svg"
 import { HiOutlineDownload } from "react-icons/hi"
 const Header = () => {
     return (
-        <header className="main">
+        <header className="head">
             <div className="header">
                 <div className="header_logo">
                     <img src={logo} alt=""/>
